@@ -1,0 +1,347 @@
+<!-- HEADER -->
+<div id="ipaas" name="ipaas" class="section page-header-xs section-white">
+    <div class="filter filter-black"></div>
+    <div class="container">
+        <app-description-header-cmp></app-description-header-cmp>
+    </div>
+</div>
+
+<!-- ALL *ngIf="(showAll);"-->
+<div id="ipaas" name="ipaas" class="section page-header-xs div-light-gray" >
+    <div class="filter filter-black"></div>
+    <div class="container">
+        <div class="row">
+            <div class="ml-auto mr-auto">
+                <h4 class="section-title-md text-uppercase text-white text-left">Rocket fuel for every ELETER</h4>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="description col-md-12 ml-auto mr-auto text-justify">
+                <p class="description-section text-left text-white">
+                    Supercharge productivity with uncapped limits, powerful insights & more.
+                    Join the Elete starship 🚀.  Choose a membership! 100% satisfaction guaranteed. Eject at any time!
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section section-sharing" id="athletemembership"  *ngIf="showAll;">
+  <div class="filter filter-black"></div>
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="row">
+                  <div class="col-md-4 ml-auto mr-auto" style="margin-top: 35px">
+                    <app-description-body-cmp></app-description-body-cmp>
+                  </div>
+                  <div class="col-md-8 ml-auto mr-auto" style="margin-top: 45px">
+                      <app-athlete-plan-cmp></app-athlete-plan-cmp>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!--
+<ngb-tabset type="pills" [justify]="'center'" class="nav-pills-danger justify-content-center">
+  <ngb-tab title="ATHLETES & GUARDIANS" >
+      <ng-template ngbTabContent>
+          <div class="space-top" style="margin-top: 20px"></div>
+          <div class="row">
+              <div class="col-md-4 ml-auto mr-auto" style="margin-top: -35px">
+                  <app-description-body-cmp></app-description-body-cmp>
+              </div>
+              <div class="col-md-8 ml-auto mr-auto">
+                  <app-athlete-plan-cmp></app-athlete-plan-cmp>
+              </div>
+          </div>
+      </ng-template>
+  </ngb-tab>
+  <ngb-tab title="COACHES" class="text-uppercase" >
+      <ng-template ngbTabContent>
+          <div class="space-top" style="margin-top: 20px"></div>
+          <div class="row">
+              <div class="col-md-4 ml-auto mr-auto" style="margin-top: -35px">
+                  <app-description-body-cmp></app-description-body-cmp>
+              </div>
+              <div class="col-md-8 ml-auto mr-auto">
+                  <app-college-plan-cmp></app-college-plan-cmp>
+              </div>
+          </div>
+      </ng-template>
+  </ngb-tab>
+
+  <!--
+  <ngb-tab title="TEAM COACHES" class="text-uppercase">
+      <ng-template ngbTabContent>
+          <div class="space-top" style="margin-top: 20px"></div>
+          <div class="row">
+              <div class="col-md-4 ml-auto mr-auto" style="margin-top: -35px">
+                  <app-description-body-cmp></app-description-body-cmp>
+              </div>
+              <div class="col-md-8 ml-auto mr-auto">
+                  <app-team-plan-cmp></app-team-plan-cmp>
+              </div>
+          </div>
+      </ng-template>
+  </ngb-tab>
+  --><!--
+</ngb-tabset>
+
+<!--
+<div class="section section-sharing " id="allmembership"  *ngIf="showAll;">
+  <div class="filter filter-black"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+          <div class="choose-plan">
+              <ngb-tabset type="pills" [justify]="'center'" class="nav-pills-danger justify-content-center">
+                  <ngb-tab title="ATHLETES & GUARDIANS" >
+                      <ng-template ngbTabContent>
+                          <div class="space-top" style="margin-top: 20px"></div>
+                          <div class="row">
+                              <div class="col-md-4 ml-auto mr-auto" style="margin-top: -35px">
+                                  <app-description-body-cmp></app-description-body-cmp>
+                              </div>
+                              <div class="col-md-8 ml-auto mr-auto">
+                                  <app-athlete-plan-cmp></app-athlete-plan-cmp>
+                              </div>
+                          </div>
+                      </ng-template>
+                  </ngb-tab>
+                  <ngb-tab title="COACHES" class="text-uppercase" >
+                      <ng-template ngbTabContent>
+                          <div class="space-top" style="margin-top: 20px"></div>
+                          <div class="row">
+                              <div class="col-md-4 ml-auto mr-auto" style="margin-top: -35px">
+                                  <app-description-body-cmp></app-description-body-cmp>
+                              </div>
+                              <div class="col-md-8 ml-auto mr-auto">
+                                  <app-college-plan-cmp></app-college-plan-cmp>
+                              </div>
+                          </div>
+                      </ng-template>
+                  </ngb-tab>
+                -->
+                  <!--
+                  <ngb-tab title="TEAM COACHES" class="text-uppercase">
+                      <ng-template ngbTabContent>
+                          <div class="space-top" style="margin-top: 20px"></div>
+                          <div class="row">
+                              <div class="col-md-4 ml-auto mr-auto" style="margin-top: -35px">
+                                  <app-description-body-cmp></app-description-body-cmp>
+                              </div>
+                              <div class="col-md-8 ml-auto mr-auto">
+                                  <app-team-plan-cmp></app-team-plan-cmp>
+                              </div>
+                          </div>
+                      </ng-template>
+                  </ngb-tab>
+                  -->
+                  <!--
+              </ngb-tabset>
+          </div>
+      </div>
+
+  </div>
+</div>
+</div>
+
+<div class="section section-sharing " id="allmembership"  *ngIf="showAll;">
+    <div class="filter filter-black"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="choose-plan">
+                    <ngb-tabset type="pills" [justify]="'center'" class="nav-pills-danger justify-content-center">
+                        <ngb-tab title="ATHLETES & GUARDIANS" >
+                            <ng-template ngbTabContent>
+                                <div class="space-top" style="margin-top: 20px"></div>
+                                <div class="row">
+                                    <div class="col-md-4 ml-auto mr-auto" style="margin-top: -35px">
+                                      des,,,,
+                                        <app-description-body-cmp></app-description-body-cmp>
+                                    </div>
+                                    <div class="col-md-8 ml-auto mr-auto">
+                                        <app-athlete-plan-cmp></app-athlete-plan-cmp>
+                                    </div>
+                                </div>
+                            </ng-template>
+                        </ngb-tab>
+                        <ngb-tab title="COACHES" class="text-uppercase" >
+                            <ng-template ngbTabContent>
+                                <div class="space-top" style="margin-top: 20px"></div>
+                                <div class="row">
+                                    <div class="col-md-4 ml-auto mr-auto" style="margin-top: -35px">
+                                        <app-description-body-cmp></app-description-body-cmp>
+                                    </div>
+                                    <div class="col-md-8 ml-auto mr-auto">
+                                        <app-college-plan-cmp></app-college-plan-cmp>
+                                    </div>
+                                </div>
+                            </ng-template>
+                        </ngb-tab>
+                        <!--
+                        <ngb-tab title="TEAM COACHES" class="text-uppercase">
+                            <ng-template ngbTabContent>
+                                <div class="space-top" style="margin-top: 20px"></div>
+                                <div class="row">
+                                    <div class="col-md-4 ml-auto mr-auto" style="margin-top: -35px">
+                                        <app-description-body-cmp></app-description-body-cmp>
+                                    </div>
+                                    <div class="col-md-8 ml-auto mr-auto">
+                                        <app-team-plan-cmp></app-team-plan-cmp>
+                                    </div>
+                                </div>
+                            </ng-template>
+                        </ngb-tab>
+                        -->
+<!--                    </ngb-tabset>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+-->
+
+<!-- ATHLETES *ngIf="(showAthlete);"-->
+<!-- ATHLETE SECTION SEPARATOR-->
+<div id="ipaas" name="ipaas" class="section page-header-xs section-dark"  *ngIf="showAthlete;">
+    <div class="filter filter-black"></div>
+    <div class="container">
+        <div class="row">
+            <div class="ml-auto mr-auto">
+                <h4 class="section-title-md text-uppercase text-center ">Rocket fuel for every Athlete</h4>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="description col-md-12 ml-auto mr-auto text-justify">
+                <p class="description-section text-white text-justify">
+                    Supercharge your productivity with uncapped limits, powerful insights & more.
+                    Join the Elete starship 🚀.  Choose a membership! 100% satisfaction guaranteed. Eject at any time!
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section section-sharing" id="athletemembership"  *ngIf="showAthlete;">
+    <div class="filter filter-black"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-4 ml-auto mr-auto" style="margin-top: -35px">
+                        <app-description-body-cmp></app-description-body-cmp>
+                    </div>
+                    <div class="col-md-8 ml-auto mr-auto">
+                        <app-athlete-plan-cmp></app-athlete-plan-cmp>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- COLLEGE COACH *ngIf="(showCoach);"-->
+<!-- COLLEGE SECTION SEPARATOR-->
+<div id="ipaas" name="ipaas" class="section page-header-xs section-dark"  *ngIf="showCoach;">
+    <div class="filter filter-black"></div>
+    <div class="container">
+        <div class="row">
+            <div class="ml-auto mr-auto">
+                <h4 class="section-title-md text-uppercase text-center ">Rocket fuel for every Coach</h4>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="description col-md-12 ml-auto mr-auto text-justify">
+                <p class="description-section text-white text-justify">
+                    Supercharge your productivity with uncapped limits, powerful insights & more.
+                    Join the Elete starship 🚀.  Choose a membership! 100% satisfaction guaranteed. Eject at any time!
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section section-sharing" id="athletemembership"  *ngIf="showCoach;">
+    <div class="filter filter-black"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-4 ml-auto mr-auto" style="margin-top: -35px">
+                        <app-description-body-cmp></app-description-body-cmp>
+                    </div>
+                    <div class="col-md-8 ml-auto mr-auto">
+                        <app-college-plan-cmp></app-college-plan-cmp>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- TEAM *ngIf="(showCoachPricing);"-->
+<!-- TEAM SECTION SEPARATOR-->
+<div id="ipaas" name="ipaas" class="section page-header-xs section-dark"  *ngIf="showTeamCoach;">
+    <div class="filter filter-black"></div>
+    <div class="container">
+        <div class="row">
+            <div class="ml-auto mr-auto">
+                <h4 class="section-title-md text-uppercase text-center ">Rocket fuel for every Team</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="description col-md-12 ml-auto mr-auto text-justify">
+                <p class="description-section text-white text-justify">
+                    Supercharge your productivity with uncapped limits, powerful insights & more.
+                    Join the Elete starship 🚀.  Choose a membership! 100% satisfaction guaranteed. Eject at any time!
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section section-sharing " id="coachmembership"  *ngIf="showTeamCoach;">
+    <div class="filter filter-black"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="choose-plan">
+                    <ngb-tabset type="pills" [justify]="'center'" class="nav-pills-primary justify-content-center section-white">
+                        <ngb-tab title="COLLEGE COACHES" class="text-uppercase">
+                            <ng-template ngbTabContent>
+                                <div class="space-top" style="margin-top: 20px"></div>
+                                <div class="row">
+                                    <div class="col-md-4 ml-auto mr-auto" style="margin-top: -35px">
+                                        <app-description-body-cmp></app-description-body-cmp>
+                                    </div>
+                                    <div class="col-md-8 ml-auto mr-auto">
+                                        <app-college-plan-cmp></app-college-plan-cmp>
+                                    </div>
+                                </div>
+                            </ng-template>
+                        </ngb-tab>
+                        <ngb-tab title="TEAM COACHES" class="text-uppercase">
+                            <ng-template ngbTabContent>
+                                <div class="space-top" style="margin-top: 20px"></div>
+                                <div class="row">
+                                    <div class="col-md-4 ml-auto mr-auto" style="margin-top: -35px">
+                                        <app-description-body-cmp></app-description-body-cmp>
+                                    </div>
+                                    <div class="col-md-8 ml-auto mr-auto">
+                                        <app-team-plan-cmp></app-team-plan-cmp>
+                                    </div>
+                                </div>
+                            </ng-template>
+                        </ngb-tab>
+                    </ngb-tabset>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

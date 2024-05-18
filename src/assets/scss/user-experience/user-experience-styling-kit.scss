@@ -1,0 +1,108 @@
+/*!
+
+ =========================================================
+ *
+ =========================================================
+
+ *
+ *
+
+ *
+
+ =========================================================
+
+ *
+
+ */
+
+@import 'user-experience-styling-kit/variables';
+@import 'user-experience-styling-kit/mixins';
+
+// Plugins CSS
+@import "user-experience-styling-kit/plugins/plugin-bootstrap-switch";
+@import "user-experience-styling-kit/plugins/plugin-bootstrap-select";
+@import "user-experience-styling-kit/plugins/plugin-tagsinput";
+@import "user-experience-styling-kit/plugins/plugin-fileupload";
+@import "user-experience-styling-kit/plugins/plugin-datetimepicker";
+
+// Core CSS
+@import "user-experience-styling-kit/nucleo-outline";
+@import "user-experience-styling-kit/alerts";
+@import "user-experience-styling-kit/checkbox-radio";
+@import "user-experience-styling-kit/badges";
+@import "user-experience-styling-kit/pagination";
+@import "user-experience-styling-kit/typography";
+@import "user-experience-styling-kit/misc";
+@import "user-experience-styling-kit/misc-extended";
+@import "user-experience-styling-kit/buttons";
+@import "user-experience-styling-kit/social-buttons";
+@import "user-experience-styling-kit/inputs";
+@import "user-experience-styling-kit/progress-bars";
+@import "user-experience-styling-kit/tooltips-and-popovers";
+
+// components
+@import "user-experience-styling-kit/tabs-navs";
+@import "user-experience-styling-kit/navbars";
+@import "user-experience-styling-kit/navbar-extend";
+@import "user-experience-styling-kit/dropdown-extend";
+@import "user-experience-styling-kit/images";
+@import "user-experience-styling-kit/tags";
+@import "user-experience-styling-kit/animated-buttons";
+@import "user-experience-styling-kit/preloaders";
+@import "user-experience-styling-kit/tables";
+@import "user-experience-styling-kit/info-areas";
+@import "user-experience-styling-kit/media";
+@import "user-experience-styling-kit/modal";
+@import "user-experience-styling-kit/carousel";
+@import "user-experience-styling-kit/footers";
+@import "user-experience-styling-kit/headers";
+@import "user-experience-styling-kit/collapse";
+
+// cards
+@import "user-experience-styling-kit/cards";
+@import "user-experience-styling-kit/cards/card-background";
+@import "user-experience-styling-kit/cards/card-blog";
+@import "user-experience-styling-kit/cards/card-contact";
+@import "user-experience-styling-kit/cards/card-image";
+@import "user-experience-styling-kit/cards/card-register";
+@import "user-experience-styling-kit/cards/card-plain";
+@import "user-experience-styling-kit/cards/card-pricing";
+@import "user-experience-styling-kit/cards/card-profile";
+@import "user-experience-styling-kit/cards/card-product";
+@import "user-experience-styling-kit/cards/card-signup";
+@import "user-experience-styling-kit/cards/card-testimonials";
+
+// For gallery, using PhotoSwipe
+@import "user-experience-styling-kit/plugins/photo-swipe/main.scss";
+@import "user-experience-styling-kit/plugins/photo-swipe/default-skin.scss";
+@import "user-experience-styling-kit/plugins/photo-swipe/gallery.scss";
+@import "user-experience-styling-kit/plugins/photo-swipe/main.scss";
+
+// Isometric cards plugin
+@import "user-experience-styling-kit/plugins/plugin-isometricGrids";
+
+// example pages and sections
+//@import "user-experience-styling-kit/examples";
+@import "user-experience-styling-kit/sections";
+@import "user-experience-styling-kit/sections-extend";
+
+@import "user-experience-styling-kit/responsive";
+
+// Nucleo Icons
+@import "user-experience-styling-kit/nucleo-icons";
+
+// Angular Differences
+@import "user-experience-styling-kit/angular-differences/presentation";
+@import "user-experience-styling-kit/angular-differences/tags";
+@import "user-experience-styling-kit/angular-differences/dropdowns";
+@import "user-experience-styling-kit/angular-differences/tabs-navs";
+@import "user-experience-styling-kit/angular-differences/tooltips-and-popovers";
+@import "user-experience-styling-kit/angular-differences/modal";
+@import "user-experience-styling-kit/angular-differences/ngb-accordion";
+@import "user-experience-styling-kit/angular-differences/ngx-gallery";
+@import "user-experience-styling-kit/angular-differences/popovers";
+@import "user-experience-styling-kit/angular-differences/ngb-datepicker";
+@import "user-experience-styling-kit/angular-differences/sliders";
+@import "user-experience-styling-kit/angular-differences/responsive";
+
+

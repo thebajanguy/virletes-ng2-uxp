@@ -1,0 +1,85 @@
+@import "../user-experience/user-experience.styles.scss";
+
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+div.box-outter {
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px $main-color solid;
+    margin: 20px;
+    padding: 0px 25px 25px 25px;
+  }
+
+  div.box-inner {
+    width: 100%;
+    box-sizing: border-box;
+    //background-color: navy;
+    border: 0px $danger-color solid;
+    color: $white-color;
+
+    background: rgba(#ebebeb, 100);
+    padding-top: 100px;
+    color: #fff;
+    text-align: center;
+  }
+  div.box-inner-top {
+    width: 100%;
+    box-sizing: border-box;
+    border: 0px $danger-color solid;
+
+    background: rgba(#f6f6f6, 100);
+    color: #000;
+    text-align: center;
+
+    min-height: 100px;
+    max-height: 200px;
+    background-color: #f6f6f6;
+    margin-top: 25px;
+
+  }
+
+  div.box-footer {
+    background-color: transparent;
+    padding: 0px 0px 0px 0px;
+    box-sizing: border-box;
+    border: 0px $main-color solid;
+    font-weight: 100;
+    font-size: smaller;
+    text-align: left;
+    color: $font-color;
+    padding-top: 10px;
+
+  }
+
+  .header-section-image{
+    background-position: center center;
+    background-size: auto;
+
+    min-height: 100vh;
+    //max-height: 999px;
+    width: 100%;
+    padding-top: 100px;
+
+    &:before{
+        background-color: rgba(0, 0, 0, 0.5);
+        content: "";
+        display: block;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+    }
+    & .container{
+        position: relative;
+        z-index: 2;
+    }
+  }

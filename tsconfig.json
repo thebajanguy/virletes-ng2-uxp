@@ -1,0 +1,46 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2020",
+    "module": "es2020",
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2020", "dom"],
+    "types": ["jest", "jquery"],
+    "paths": {
+			"@assets/*": ["src/assets/*"],
+			"@environments/*": ["src/environments/*"],
+			"@app_modules_core/*": ["src/app/modules/@core/*"],
+			"@app_modules_startup/*": ["src/app/modules/@startup/*"],
+			"@app_modules_useridentity/*": ["src/app/modules/@user-identity/*"],
+			"@app_modules_user_xperience/*": ["src/app/modules/user_experience/*"],
+      "@app_modules_user_experience_shared/*": ["src/app/modules/user_experience/@shared/*"],
+			"@app_modules_user_workspace/*": ["src/app/modules/user_workspace/*"],
+      "@app_modules_user_workspace_shared/*": ["src/app/modules/user_workspace/@shared/*"]
+		}
+  },
+	"angularCompilerOptions": {
+		//"fullTemplateTypeCheck": true,
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+	}
+
+}

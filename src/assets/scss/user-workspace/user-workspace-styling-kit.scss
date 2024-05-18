@@ -1,0 +1,110 @@
+/*!
+
+=========================================================
+* Now UI Dashboard Pro Angular - v1.2.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/virletes-ng2-uxp
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
+
+@import "user-workspace-styling-kit/variables";
+@import "user-workspace-styling-kit/mixins";
+
+// Core CSS
+@import "user-workspace-styling-kit/buttons";
+@import "user-workspace-styling-kit/social-buttons";
+@import "user-workspace-styling-kit/inputs";
+@import "user-workspace-styling-kit/typography";
+@import "user-workspace-styling-kit/misc";
+@import "user-workspace-styling-kit/navbar";
+@import "user-workspace-styling-kit/dropdown";
+@import "user-workspace-styling-kit/alerts";
+@import "user-workspace-styling-kit/images";
+@import "user-workspace-styling-kit/nucleo-outline";
+@import "user-workspace-styling-kit/tables";
+@import "user-workspace-styling-kit/footers";
+@import "user-workspace-styling-kit/fixed-plugin";
+
+// components
+@import "user-workspace-styling-kit/checkboxes-radio";
+@import "user-workspace-styling-kit/progress";
+@import "user-workspace-styling-kit/badges";
+@import "user-workspace-styling-kit/pagination";
+@import "user-workspace-styling-kit/info-areas";
+@import "user-workspace-styling-kit/pills";
+@import "user-workspace-styling-kit/tabs";
+@import "user-workspace-styling-kit/rtl";
+@import "user-workspace-styling-kit/popups";
+@import "user-workspace-styling-kit/modals";
+@import "user-workspace-styling-kit/carousel";
+@import "user-workspace-styling-kit/sidebar-and-main-panel";
+@import "user-workspace-styling-kit/timeline";
+
+// cards
+@import "user-workspace-styling-kit/cards";
+@import "user-workspace-styling-kit/cards/card-chart";
+@import "user-workspace-styling-kit/cards/card-user";
+@import "user-workspace-styling-kit/cards/card-plain";
+
+@import "user-workspace-styling-kit/cards/card-background";
+@import "user-workspace-styling-kit/cards/card-collapse";
+@import "user-workspace-styling-kit/cards/card-map";
+@import "user-workspace-styling-kit/cards/card-contributions";
+@import "user-workspace-styling-kit/cards/card-info-area";
+@import "user-workspace-styling-kit/cards/card-lock";
+@import "user-workspace-styling-kit/cards/card-pricing";
+@import "user-workspace-styling-kit/cards/card-profile";
+@import "user-workspace-styling-kit/cards/card-signup";
+@import "user-workspace-styling-kit/cards/card-stats-mini";
+@import "user-workspace-styling-kit/cards/card-stats";
+@import "user-workspace-styling-kit/cards/card-subcategories";
+@import "user-workspace-styling-kit/cards/card-testimonials";
+@import "user-workspace-styling-kit/cards/card-wizard";
+
+// Plugins CSS
+@import "user-workspace-styling-kit/plugins/plugin-bootstrap-switch";
+@import "user-workspace-styling-kit/plugins/plugin-nouislider";
+@import "user-workspace-styling-kit/plugins/plugin-animate-bootstrap-notify";
+@import "user-workspace-styling-kit/plugins/plugin-perfect-scrollbar";
+@import "user-workspace-styling-kit/plugins/plugin-sweetalert2";
+@import "user-workspace-styling-kit/plugins/plugin-card-wizard";
+@import "user-workspace-styling-kit/plugins/plugin-datetimepicker";
+@import "user-workspace-styling-kit/plugins/plugin-bootstrap-select";
+@import "user-workspace-styling-kit/plugins/plugin-jasny-fileupload";
+@import "user-workspace-styling-kit/plugins/plugin-tagsinput";
+@import "user-workspace-styling-kit/plugins/plugin-datatables.net";
+@import "user-workspace-styling-kit/plugins/plugin-jquery.jvectormap";
+// @import "user-workspace-styling-kit/plugins/plugin-fullcalendar";
+
+// example pages and sections
+@import "user-workspace-styling-kit/example-pages";
+@import "user-workspace-styling-kit/sections";
+
+
+@import "user-workspace-styling-kit/responsive";
+@import "user-workspace-styling-kit/media-queries";
+
+// angular differences
+@import "user-workspace-styling-kit/angular/angular-differences";
+
+/*
+:host ::ng-deep {
+  @import '~@riapacheco/yutes/main.scss'; // For stripping styles & antialiasing
+  @import '~@riapacheco/yutes/seasonal.scss'; // To access dark color palette
+}
+
+html, body {
+  font-size: 17px;
+  background-color: $midnight-dark;
+  background-image: linear-gradient(to bottom right, $midnight-dark, $midnight-medium);
+  background-attachment: fixed; // The background is fixed relative to the viewport
+  color: $steel-regular; // Change text color to an _almost_ white
+}
+*/

@@ -1,0 +1,898 @@
+<div class="panel-header panel-header-sm">
+
+</div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card card-stats">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="statistics">
+                <div class="info">
+                  <div class="icon icon-primary">
+                    <i class="custom-ui-icons ui-2_chat-round"></i>
+                  </div>
+                  <h3 class="info-title">859</h3>
+                  <h6 class="stats-title">Messages user-workspace/dashboard</h6>
+
+                  <div>
+                    <button class="btn btn-primary" (click)="open(classic, '', 'lg')">
+                      Classic modal
+                    </button>
+
+                    <button class="btn btn-info" (click)="open(Notice, '', 'md')">
+                      Notice modal
+                    </button>
+
+
+                    <button class="btn btn-default" (click)="open(modal_mini, 'modal_mini', 'sm')">
+                      Small alert modal
+                    </button>                  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="statistics">
+                <div class="info">
+                  <div class="icon icon-success">
+                    <i class="custom-ui-icons business_money-coins"></i>
+                  </div>
+                  <h3 class="info-title"><small>$</small>3,521</h3>
+                  <h6 class="stats-title">Today Revenue</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="statistics">
+                <div class="info">
+                  <div class="icon icon-info">
+                    <i class="custom-ui-icons users_single-02"></i>
+                  </div>
+                  <h3 class="info-title">562</h3>
+                  <h6 class="stats-title">Customers</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="statistics">
+                <div class="info">
+                  <div class="icon icon-danger">
+                    <i class="custom-ui-icons objects_support-17"></i>
+                  </div>
+                  <h3 class="info-title">353</h3>
+                  <h6 class="stats-title">Support Requests</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-4 col-md-6">
+      <div class="card card-chart">
+        <div class="card-header">
+          <h5 class="card-category">Active Users</h5>
+          <h2 class="card-title">34,252</h2>
+          <div class="" ngbDropdown>
+            <button
+              type="button"
+              class="btn btn-round btn-default btn-simple btn-icon no-caret"
+              data-toggle="dropdown"
+              ngbDropdownToggle
+            >
+              <i class="custom-ui-icons loader_gear"></i>
+            </button>
+            <div class="dropdown-menu-right" ngbDropdownMenu>
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item text-danger" href="#">Remove Data</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="chart-area">
+            <canvas
+              baseChart
+              id="lineChartExample"
+              [datasets]="lineChartData"
+              [labels]="lineChartLabels"
+              [colors]="lineChartColors"
+              [options]="lineChartOptions"
+              [chartType]="lineChartType"
+              (chartHover)="chartHovered($event)"
+              (chartClick)="chartClicked($event)"
+            ></canvas>
+          </div>
+          <div class="table-responsive">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="flag"><img src="../assets/img/US.png" /></div>
+                  </td>
+                  <td>USA</td>
+                  <td class="text-right">2.920</td>
+                  <td class="text-right">53.23%</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="flag"><img src="../assets/img/DE.png" /></div>
+                  </td>
+                  <td>Germany</td>
+                  <td class="text-right">1.300</td>
+                  <td class="text-right">20.43%</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="flag"><img src="../assets/img/AU.png" /></div>
+                  </td>
+                  <td>Australia</td>
+                  <td class="text-right">760</td>
+                  <td class="text-right">10.35%</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="flag"><img src="../assets/img/GB.png" /></div>
+                  </td>
+                  <td>United Kingdom</td>
+                  <td class="text-right">690</td>
+                  <td class="text-right">7.87%</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="flag"><img src="../assets/img/RO.png" /></div>
+                  </td>
+                  <td>Romania</td>
+                  <td class="text-right">600</td>
+                  <td class="text-right">5.94%</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="flag"><img src="../assets/img/BR.png" /></div>
+                  </td>
+                  <td>Brasil</td>
+                  <td class="text-right">550</td>
+                  <td class="text-right">4.34%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="stats">
+            <i class="custom-ui-icons arrows-1_refresh-69"></i> Just Updated
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="card card-chart">
+        <div class="card-header">
+          <h5 class="card-category">Summer Email Campaign</h5>
+          <h2 class="card-title">55,300</h2>
+          <div class="" ngbDropdown>
+            <button
+              type="button"
+              class="btn btn-round btn-default btn-simple btn-icon no-caret"
+              data-toggle="dropdown"
+              ngbDropdownToggle
+            >
+              <i class="custom-ui-icons loader_gear"></i>
+            </button>
+            <div class="dropdown-menu-right" ngbDropdownMenu>
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item text-danger" href="#">Remove Data</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="chart-area">
+            <canvas
+              baseChart
+              id="lineChartExampleWithNumbersAndGrid"
+              [datasets]="lineChartWithNumbersAndGridData"
+              [labels]="lineChartWithNumbersAndGridLabels"
+              [colors]="lineChartWithNumbersAndGridColors"
+              [options]="lineChartWithNumbersAndGridOptions"
+              [chartType]="lineChartWithNumbersAndGridType"
+              (chartHover)="chartHovered($event)"
+              (chartClick)="chartClicked($event)"
+            ></canvas>
+          </div>
+          <div class="card-progress">
+            <div class="progress-container">
+              <span class="progress-badge">Delivery Rate</span>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="60"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 90%"
+                >
+                  <span class="progress-value">90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-container progress-success">
+              <span class="progress-badge">Open Rate</span>
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-warning"
+                  role="progressbar"
+                  aria-valuenow="60"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 60%"
+                >
+                  <span class="progress-value">60%</span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-container progress-info">
+              <span class="progress-badge">Click Rate</span>
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-warning"
+                  role="progressbar"
+                  aria-valuenow="60"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 12%"
+                >
+                  <span class="progress-value">12%</span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-container progress-warning">
+              <span class="progress-badge">Hard Bounce</span>
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-warning"
+                  role="progressbar"
+                  aria-valuenow="60"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 5%"
+                >
+                  <span class="progress-value">5%</span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-container progress-danger">
+              <span class="progress-badge">Spam Report</span>
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-warning"
+                  role="progressbar"
+                  aria-valuenow="60"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 0.11%"
+                >
+                  <span class="progress-value">0.11%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="stats">
+            <i class="custom-ui-icons arrows-1_refresh-69"></i> Just Updated
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="card card-chart">
+        <div class="card-header">
+          <h5 class="card-category">Checked Tasks</h5>
+          <h2 class="card-title">105</h2>
+        </div>
+        <div class="card-body">
+          <div class="chart-area">
+            <canvas
+              baseChart
+              id="activeCountries"
+              [datasets]="lineChartGradientsNumbersData"
+              [labels]="lineChartGradientsNumbersLabels"
+              [colors]="lineChartGradientsNumbersColors"
+              [options]="lineChartGradientsNumbersOptions"
+              [chartType]="lineChartGradientsNumbersType"
+              (chartHover)="chartHovered($event)"
+              (chartClick)="chartClicked($event)"
+            ></canvas>
+          </div>
+          <h4 class="card-title text-center">Active Tasks</h4>
+          <div class="table-full-width table-responsive">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          checked
+                        />
+                        <span class="form-check-sign"></span>
+                      </label>
+                    </div>
+                  </td>
+                  <td class="img-row">
+                    <div class="img-wrapper img-raised">
+                      <img src="../assets/img/emilyz.jpg" class="img-raised" />
+                    </div>
+                  </td>
+                  <td class="text-left">Sign contract</td>
+                  <td class="td-actions text-right">
+                    <button
+                      type="button"
+                      rel="tooltip"
+                      title=""
+                      class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral"
+                      data-original-title="Edit Task"
+                    >
+                      <i class="custom-ui-icons ui-2_settings-90"></i>
+                    </button>
+                    <button
+                      type="button"
+                      rel="tooltip"
+                      title=""
+                      class="btn btn-danger btn-round btn-icon btn-icon-mini btn-neutral"
+                      data-original-title="Remove"
+                    >
+                      <i class="custom-ui-icons ui-1_simple-remove"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" />
+                        <span class="form-check-sign"></span>
+                      </label>
+                    </div>
+                  </td>
+                  <td class="img-row">
+                    <div class="img-wrapper img-raised">
+                      <img src="../assets/img/james.jpg" class="img-raised" />
+                    </div>
+                  </td>
+                  <td class="text-left">Send E-mails</td>
+                  <td class="td-actions text-right">
+                    <button
+                      type="button"
+                      rel="tooltip"
+                      title=""
+                      class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral"
+                      data-original-title="Edit Task"
+                    >
+                      <i class="custom-ui-icons ui-2_settings-90"></i>
+                    </button>
+                    <button
+                      type="button"
+                      rel="tooltip"
+                      title=""
+                      class="btn btn-danger btn-round btn-icon btn-icon-mini btn-neutral"
+                      data-original-title="Remove"
+                    >
+                      <i class="custom-ui-icons ui-1_simple-remove"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          checked
+                        />
+                        <span class="form-check-sign"></span>
+                      </label>
+                    </div>
+                  </td>
+                  <td class="img-row">
+                    <div class="img-wrapper img-raised">
+                      <img src="../assets/img/mike.jpg" class="img-raised" />
+                    </div>
+                  </td>
+                  <td class="text-left">Write article</td>
+                  <td class="td-actions text-right">
+                    <button
+                      type="button"
+                      rel="tooltip"
+                      title=""
+                      class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral"
+                      data-original-title="Edit Task"
+                    >
+                      <i class="custom-ui-icons ui-2_settings-90"></i>
+                    </button>
+                    <button
+                      type="button"
+                      rel="tooltip"
+                      title=""
+                      class="btn btn-danger btn-round btn-icon btn-icon-mini btn-neutral"
+                      data-original-title="Remove"
+                    >
+                      <i class="custom-ui-icons ui-1_simple-remove"></i>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="stats">
+            <i class="custom-ui-icons ui-2_time-alarm"></i> Last 7 days
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">Best Selling Products</h4>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-shopping">
+              <thead class="">
+                <tr>
+                  <th class="text-center"></th>
+                  <th>Product</th>
+                  <th>Color</th>
+                  <th>Size</th>
+                  <th class="text-right">Price</th>
+                  <th class="text-right">Qty</th>
+                  <th class="text-right">Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="img-container">
+                      <img src="../assets/img/saint-laurent.jpg" alt="..." />
+                    </div>
+                  </td>
+                  <td class="td-name">
+                    <a href="#jacket">Suede Biker Jacket</a> <br />
+                    <small>by Saint Laurent</small>
+                  </td>
+                  <td>Black</td>
+                  <td>M</td>
+                  <td class="td-number"><small>€</small>3,390</td>
+                  <td class="td-number">1</td>
+                  <td class="td-number"><small>€</small>549</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="img-container">
+                      <img src="../assets/img/balmain.jpg" alt="..." />
+                    </div>
+                  </td>
+                  <td class="td-name">
+                    <a href="#pants">Jersey T-Shirt</a> <br />
+                    <small>by Balmain</small>
+                  </td>
+                  <td>Black</td>
+                  <td>M</td>
+                  <td class="td-number"><small>€</small>499</td>
+                  <td class="td-number">2</td>
+                  <td class="td-number"><small>€</small>998</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="img-container">
+                      <img src="../assets/img/prada.jpg" alt="..." />
+                    </div>
+                  </td>
+                  <td class="td-name">
+                    <a href="#nothing">Slim-Fit Swim Short</a> <br />
+                    <small>by Prada</small>
+                  </td>
+                  <td>Red</td>
+                  <td>M</td>
+                  <td class="td-number"><small>€</small>200</td>
+                  <td class="td-number">1</td>
+                  <td class="td-number"><small>€</small>799</td>
+                </tr>
+                <tr>
+                  <td colspan="5"></td>
+                  <td class="td-total">Total</td>
+                  <td class="td-price"><small>€</small>2,346</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card card-stats">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="statistics">
+                <div class="info">
+                  <div class="icon icon-primary">
+                    <i class="custom-ui-icons ui-2_chat-round"></i>
+                  </div>
+                  <h3 class="info-title">859</h3>
+                  <h6 class="stats-title">Messages user-workspace/dashboard</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="statistics">
+                <div class="info">
+                  <div class="icon icon-success">
+                    <i class="custom-ui-icons business_money-coins"></i>
+                  </div>
+                  <h3 class="info-title"><small>$</small>3,521</h3>
+                  <h6 class="stats-title">Today Revenue</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="statistics">
+                <div class="info">
+                  <div class="icon icon-info">
+                    <i class="custom-ui-icons users_single-02"></i>
+                  </div>
+                  <h3 class="info-title">562</h3>
+                  <h6 class="stats-title">Customers</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="statistics">
+                <div class="info">
+                  <div class="icon icon-danger">
+                    <i class="custom-ui-icons objects_support-17"></i>
+                  </div>
+                  <h3 class="info-title">353</h3>
+                  <h6 class="stats-title">Support Requests</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<ng-template #classic let-c="close" let-d="dismiss" style="width: 100%;">
+  <div class="modal-header justify-content-center div-color-main">
+    <button type="button" class="close" (click)="d('Cross click')">
+      <i class="custom-ui-icons ui-1_bell-53"></i>
+    </button>
+    <h4 class="title title-up">Modal title</h4>
+  </div>
+  <div class="modal-body">
+    <div class="main-content" style="padding-bottom: 100px">
+      <div class="row">
+        <div class="col-md-8 col-sm-12">
+          <div class="card-no-shadow">
+            <div class="card card-just-text no-transition">
+              <div class="card-body">
+                <h4
+                  class="section-title-md font-weight-bold text-uppercase content-left"
+                >
+                  Alvin Brathwaite
+                </h4>
+                <!-- <h6 class="card-title "><a href="javascript:void(0)" class="font-weight-bold">{{currentDate}}</a></h6>  -->
+                {{ currentDate }}
+              </div>
+            </div>
+            <!-- end card -->
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <p><strong>First Name: </strong> {{ profile.givenName }}</p>
+                <p><strong>Last Name: </strong> {{ profile.surname }}</p>
+                <p><strong>Email: </strong> {{ profile.userPrincipalName }}</p>
+                <p><strong>Id: </strong> {{ profile.id }}</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="card">
+            <div class="card-header"><h5 class="title">userworkspace/account</h5></div>
+            <div class="card-body">
+              <form>
+                <div class="row">
+                  <div class="col-md-5 pr-1">
+                    <div class="form-group">
+                      <label>Company (disabled)</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        disabled=""
+                        placeholder="Company"
+                        value="Creative Code Inc."
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-3 px-1">
+                    <div class="form-group">
+                      <label>Username</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Username"
+                        value="michael23"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-4 pl-1">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Email"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 pr-1">
+                    <div class="form-group">
+                      <label>First Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Company"
+                        value="Mike"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6 pl-1">
+                    <div class="form-group">
+                      <label>Last Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Last Name"
+                        value="Andrew"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label>Address</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Home Address"
+                        value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4 pr-1">
+                    <div class="form-group">
+                      <label>City</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="City"
+                        value="Mike"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-4 px-1">
+                    <div class="form-group">
+                      <label>Country</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Country"
+                        value="Andrew"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-4 pl-1">
+                    <div class="form-group">
+                      <label>Postal Code</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        placeholder="ZIP Code"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label>About Me</label>
+                      <textarea
+                        rows="4"
+                        cols="80"
+                        class="form-control"
+                        placeholder="Here can be your description"
+                        value="Mike"
+                      >
+    Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</textarea
+                      >
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-md-4">
+          <div class="card card-user">
+            <div class="image">
+              <img src="../../assets/img/bg5.jpg" alt="..." />
+            </div>
+            <div class="card-body">
+              <div class="author">
+                <a href="#">
+                  <img
+                    class="avatar border-gray"
+                    src="../../assets/img/mike.jpg"
+                    alt="..."
+                  />
+                  <h5 class="title">Mike Andrew</h5>
+                </a>
+                <p class="description">michael24</p>
+              </div>
+              <p class="description text-center">
+                "Lamborghini Mercy <br />
+                Your chick she so thirsty <br />
+                I'm in that two seat Lambo"
+              </p>
+            </div>
+            <hr />
+            <div class="button-container">
+              <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
+                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              </button>
+              <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
+                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              </button>
+              <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
+                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              </button>
+              <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
+                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              </button>
+              <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
+                <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default">Nice Button</button>
+    <button type="button" class="btn btn-danger" (click)="c('Close click')">
+      Close
+    </button>
+  </div>
+</ng-template>
+
+
+<ng-template #Notice let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <button type="button" class="close" (click)="d('Cross click')">
+      <i class="custom-ui-icons ui-1_simple-remove"></i>
+    </button>
+    <h5 class="modal-title" id="myModalLabel">
+      How Do You Become an Affiliate?
+    </h5>
+  </div>
+  <div class="modal-body text-center">
+    <div class="instruction">
+      <div class="row">
+        <div class="col-md-8">
+          <strong>1. Register</strong>
+          <p class="description">
+            The first step is to create an account at
+            <a href="https://www.creative-tim.com/">Creative Tim</a>. You can
+            choose a social network or go for the classic version, whatever
+            works best for you.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <div class="picture">
+            <img
+              src="assets/img/bg1.jpg"
+              alt="Thumbnail Image"
+              class="rounded img-raised"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="instruction">
+      <div class="row">
+        <div class="col-md-8">
+          <strong>2. Apply</strong>
+          <p class="description">
+            The first step is to create an account at
+            <a href="https://www.creative-tim.com/">Creative Tim</a>. You can
+            choose a social network or go for the classic version, whatever
+            works best for you.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <div class="picture">
+            <img
+              src="assets/img/bg3.jpg"
+              alt="Thumbnail Image"
+              class="rounded img-raised"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>
+      If you have more questions, don't hesitate to contact us or send us a
+      tweet @creativetim. We're here to help!
+    </p>
+  </div>
+  <div class="modal-footer justify-content-center">
+    <button
+      type="button"
+      class="btn btn-info btn-round"
+      (click)="c('Close click')"
+    >
+      Sounds good!
+    </button>
+  </div>
+</ng-template>
+
+
+<ng-template #modal_mini let-c="close" let-d="dismiss">
+  <div class="modal-header justify-content-center">
+    <div class="modal-profile">
+      <i class="custom-ui-icons users_circle-08"></i>
+    </div>
+  </div>
+  <div class="modal-body"><p>Always have an access to your profile</p></div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-link btn-neutral">Back</button>
+    <button
+      type="button"
+      class="btn btn-link btn-neutral"
+      (click)="c('Close click')"
+    >
+      Close
+    </button>
+  </div>
+</ng-template>

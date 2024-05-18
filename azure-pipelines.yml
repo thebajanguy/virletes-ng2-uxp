@@ -1,0 +1,56 @@
+# Node.js with Angular
+# Build a Node.js project that uses Angular.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+  branches:
+    include:
+    - development
+    exclude:
+    - main
+    - master
+    - feature/*-wip
+  paths:
+    include:
+    - '*' # same as '/' for the repository root
+  batch: true
+
+stages:
+- stage: Build
+  displayName: Build stage
+  jobs:
+  - job: BuildJob
+    pool:
+      vmImage: ubuntu-latest
+    steps:
+      - checkout: self
+        submodules: true
+      - task: NodeTool@0
+        inputs:
+          versionSpec: '14.x'
+          checkLatest: true
+        displayName: 'TASK | Install Node.js 14.x Agent'
+
+      - script: npm install -g @angular/cli
+        displayName: 'Install the Angular CLI'
+      - script: npm install
+        displayName: 'Install the NPM Packages'
+      - script:  npx ng build --aot --build-optimizer --configuration production
+        displayName: 'Build the Angular Application'
+
+      - task: ArchiveFiles@2
+        displayName: 'Archive the NG2 Web Files as Zip File'
+        inputs:
+          rootFolderOrFile: '$(System.DefaultWorkingDirectory)/dist/virletes-ng2-uxp/'
+          includeRootFolder: false
+          archiveType: zip
+          archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+          replaceExistingArchive: true
+
+      - task: PublishBuildArtifacts@1
+        displayName: 'Publish Zip File as Artifact'
+        inputs:
+          PathtoPublish: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+          ArtifactName: 'drop'
+          publishLocation: 'Container'

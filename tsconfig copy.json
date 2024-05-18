@@ -1,0 +1,51 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "es2020",
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2018", "dom"],
+    "paths": {
+			"@environments/*": ["src/environments/*"],
+			"@assets/*": ["src/assets/*"],
+			"@app_modules_core/*": ["src/app/modules/@core/*"],
+			"@app_modules_shared/*": ["src/app/modules/@shared/*"],
+			"@app_modules_startup/*": ["src/app/modules/@startup/*"],
+			"@app_modules_pages/*": ["src/app/modules/pages/*"],
+			"@app_modules_user_workspace/*": ["src/app/modules/user-workspace/*"]
+		},
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+		"noImplicitThis": false,
+		"alwaysStrict": false
+  },
+  "exclude": [
+    "node_modules/*",
+    "**/*.spec.ts"
+  ],
+  "files": [
+    "src/main.ts",
+    "src/polyfills.ts"
+  ],
+  "include": [
+    "src/**/*.d.ts"
+  ],
+	"angularCompilerOptions": {
+		"fullTemplateTypeCheck": false,
+
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": false,
+    "strictInputAccessModifiers": false,
+    "strictTemplates": false
+	}
+}

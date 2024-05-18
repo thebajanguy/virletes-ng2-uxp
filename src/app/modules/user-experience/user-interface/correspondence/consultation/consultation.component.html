@@ -1,0 +1,317 @@
+<section class="page-header page-header-image page-header-small" style="background-image: url('assets/img/sections/consultation.png')">
+    <div class="content-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ml-auto mr-auto content-center">
+                    <h1 class="page-header-1 text-white">
+                        Good call
+                    </h1>
+
+                    <div class="buttons" style="z-index: 9999; top: 3em;">
+                        <a href="virtual-athlete-profiles/athletes" class="btn btn-info btn-wd btn-magnify">
+                            &nbsp; View Athlete Membership &nbsp;
+                        </a>&nbsp;&nbsp;
+                        <a href="virtual-athlete-profiles/coaches" class="btn btn-success btn-wd btn-magnify">
+                            &nbsp; View Coach Membership &nbsp;
+                        </a>&nbsp;&nbsp;
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section div-section-separator" style="padding:0px; padding-bottom: 40px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 ml-auto mr-auto ">
+                <h2 class="text-color-white align-left">Getting in Touch with VirLetes&trade;</h2>
+                <br />
+                <h5 class="text-color-white align-left">
+                    Have a Requirement? Let us know! Use the resources below to contact us or book a consultation call!
+                </h5>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SCHEDULE CONSULTATION -->
+<section class="section section-image" style="background-image: url('assets/img/sections/consultation.png')">
+    <div class="container">
+        <div class="row" style="padding-top: 20px;">
+            <div class="col-md-6 col-sm-12 ml-auto mr-auto contact-form-left" style="padding-bottom:20px;">
+                <h2>Recruiting Journey Starts Here</h2>
+                <h3 class=" text-color-info text-left">Let's talk strategy</h3>
+                <h5 class="text-left title">
+                    Thanks for being a valued visitor of VirLetes&trade;.
+                    Schedule a Free Consultation with a VirLetes&trade; Transformation Expert.
+                    You've made the first step to getting your transformation on track. Let's talk about where you want it to go.
+                    We appreciate and value your time!
+                </h5>
+                <div class="info info-horizontal" style="margin-left:0px;">
+                    <div class="icon icon-info">
+                        <i class="nc-icon nc-pin-3" aria-hidden="true"></i>
+                    </div>
+                    <div class="description">
+                        <h4 class="info-title">Find us at the office</h4>
+                        <h5 class="text-left ">
+                            VirLetes&trade;<br />
+                            Irvine, California, 92606<br />
+                            United States
+                        </h5>
+                    </div>
+                </div>
+                <div class="info info-horizontal" style="margin-left:0px;">
+                    <div class="icon icon-danger">
+                        <i class="nc-icon nc-badge" aria-hidden="true"></i>
+                    </div>
+                    <div class="description">
+                        <h4 class="info-title">Call us:</h4>
+                        <h4 class="description">
+                            <strong>(929) 800-4457 </strong>
+                        </h4>
+                    </div>
+                </div>
+                <div class="info info-horizontal" style="margin-left:0px;">
+                    <div class="icon icon-info">
+                        <i class="nc-icon nc-email-85" aria-hidden="true"></i>
+                    </div>
+                    <div class="description">
+                        <h4 class="info-title">Or send email to:</h4>
+                        <h4 class="description">
+                            <strong>emailus@virletes.com</strong>
+                        </h4>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6 col-sm-12 ml-auto mr-auto contact-form-right" style="padding-bottom:20px;">
+                <h1 class="text-left text-uppercase">
+                    REQUEST A CONSULTATION
+                </h1>
+
+                <p class="text-left">
+                    Use the form below to schedule your free consultation!
+                </p>
+                <br />
+
+                <form #consultationForm="ngForm" novalidate (ngSubmit)="onConsultationFormSubmit(consultationForm.value, consultationForm.valid)">
+                    <div class="form-row">
+                        <div class="form-group col-md-6 col-sm-6">
+                            <input class="form-control"
+                                   type="text"
+                                   name="firstName"
+                                   placeholder="FIRST NAME *"
+                                   required
+                                   [ngModel]="Correspondence.firstName"
+                                   #firstName="ngModel">
+                        </div>
+                        <div class="form-group col-md-6 col-sm-6">
+                            <input class="form-control"
+                                   type="text"
+                                   name="lastName"
+                                   placeholder="LAST NAME *"
+                                   required
+                                   [ngModel]="Correspondence.lastName"
+                                   #lastName="ngModel">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6 col-sm-6">
+                            <input class="form-control"
+                                   type="text"
+                                   name="email"
+                                   placeholder="BUSINESS EMAIL *"
+                                   [ngModel]="Correspondence.email"
+                                   required
+                                   #email="ngModel"
+                                   pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$">
+                            <div [hidden]="email.valid || (email.pristine && !consultationForm.submitted)">
+                                <span *ngIf="email.errors?.pattern" class="alert alert-danger">Format should be <i>Email@VirLetes.com</i>!</span>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6 col-sm-6">
+                            <input class="form-control"
+                                   type="text"
+                                   name="phoneNumber"
+                                   placeholder="BUSINESS NUMBER *"
+                                   required
+                                   [ngModel]="Correspondence.phoneNumber"
+                                   #phoneNumber="ngModel">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6 col-sm-6">
+                            <input class="form-control"
+                                   type="text"
+                                   name="companyName"
+                                   placeholder="COMPANY *"
+                                   required
+                                   [ngModel]="Correspondence.companyName"
+                                   #companyName="ngModel">
+                        </div>
+                        <div class="form-group col-md-6 col-sm-6">
+                            <input class="form-control"
+                                   type="text"
+                                   name="jobTitle"
+                                   placeholder="TITLE/POSITION *"
+                                   required
+                                   [ngModel]="Correspondence.jobTitle"
+                                   #jobTitle="ngModel">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6 col-sm-6">
+                            <input class="form-control"
+                                   type="text"
+                                   name="industry"
+                                   placeholder="INDUSTRY *"
+                                   required
+                                   [ngModel]="Correspondence.industry"
+                                   #industry="ngModel">
+                        </div>
+                        <div class="form-group col-md-6 col-sm-6">
+                            <select class="form-control" required id="companySize" name="companySize" title="Company Size"
+                                    [(ngModel)]="Correspondence.companySize" #companySize="ngModel">
+                                <option *ngFor="let item of sizeDropdownList; let i = index" [ngValue]="item.id">{{ item.itemName }}</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6 col-sm-12">
+                            <input class="form-control border-input" title="Day"
+                                   type="text"
+                                   id="preferredDay"
+                                   name="preferredDay"
+                                   [ngModel]="Correspondence.preferredDay"
+                                   placeholder="MM/DD/YYYY"
+                                   onfocus="(this.type='date')"
+                                   onblur="(this.type='text')"
+                                   required #preferredDay="ngModel" />
+                        </div>
+                        <div class="form-group col-md-6 col-sm-12">
+                            <select class="form-control"
+                                    required
+                                    id="preferredTime"
+                                    name="preferredTime"
+                                    title="Time"
+                                    [(ngModel)]="Correspondence.preferredTime" #preferredTime="ngModel">
+                                <option *ngFor="let item of preferredTimeDropdownList; let i = index" [ngValue]="item.id">{{ item.itemName }}</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-12 col-sm-12">
+                            <select class="form-control" required id="subject" name="subject" title="Subject"
+                                    [(ngModel)]="Correspondence.subject" #subject="ngModel">
+                                <option *ngFor="let item of inquiryDropdownList; let i = index" [ngValue]="item.id">{{ item.itemName }}</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12 col-sm-12">
+                            <textarea class="form-control textarea-limited" title="Message"
+                                      placeholder="HOW CAN WE HELP YOU? *"
+                                      required
+                                      rows="5"
+                                      maxlength="1000"
+                                      name="message"
+                                      [ngModel]="Correspondence.message"
+                                      #message="ngModel">
+                            </textarea>
+                        </div>
+                    </div>
+                    <!-- ROBOT CHECK -->
+                    <div class="form-row">
+                        <div class="form-group col-md-12 col-sm-12">
+                            <bSwitch [switch-on-color]="'info'"
+                                     [switch-off-color]="'info'"
+                                     [(ngModel)]="isRobotSwitch"
+                                     name="isRobotSwitch">
+                            </bSwitch>
+                            <span style="margin-top: -17px;font-weight:500;">
+                                &nbsp;<strong>I am not a Robot!</strong>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- SUBMIT BUTTON -->
+                    <div class="form-row">
+                        <div class="form-group col-md-12 col-sm-12">
+                            <button type="submit"
+                                    [disabled]="loading || !consultationForm.valid || !isRobotSwitch"
+                                    class="btn btn-block  btn-success text-uppercase btn-magnify">
+                                <div class='uil-reload-css reload-small' *ngIf="(loading);">
+                                    <div></div>
+                                </div>
+                                <i class="nc-icon nc-email-85"></i> &nbsp; Submit Consultation Request &nbsp;
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12 col-sm-12">
+                            <small>
+                                I'd like to learn more about VirLetes&trade;'s business innovation and digital transformation services.
+                                Please contact me at the phone number and/or email I listed above.
+                                I am submitting this form so you can contact me and keep me informed about your products, and/or services.
+                                I understand that I do not need to submit this form.
+                                VirLetes&trade; collects certain categories of personal information and uses this information in various ways, including providing product information and/or service to you.
+                            </small>
+                            <small>By submitting this form, I'm indicating that I've read and agree to VirLetes&trade;'s&nbsp; <a href="#/privacy" class="text-primary">Terms & Conditions</a> &nbsp; and &nbsp; <a href="#/privacy" class="text-primary">Privacy Policy</a>.</small>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row div-section-separator separator-top-card justify-content-center" style="padding-bottom: 50px;">
+            <div class="col-md-12 col-sm-12" style="padding: 0px;padding-left: 30px;padding-right: 30px;padding-bottom: 15px;">
+                <div class="description text-center text-color-white">
+                    <h3 class="text-color-white">HOW WE HELP </h3>
+                    <h4 class="text-color-white"> Reap the benefits of working with Experts.</h4>
+                    <h5 class="description text-color-white">
+                        There are many ways to access the expertise of VirLetes&trade;'s Sports Technology and Recruiting experts.
+                        Click on the service offering name to learn more about how we can help you today.
+                    </h5>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-xl-2">
+                <a href="#/digital-transformation/digital-transformation-strategy" class="btn btn-link btn-warning btn-magnify">
+                   Athlete Recruiting Profiles
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-xl-2">
+                <a href="#/digital-transformation/digital-transformation-services" class="btn btn-link btn-warning btn-magnify">
+                    Parent / Guardian Recruiting Profile
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-xl-2">
+                <a href="#/digital-transformation/cloud-transformation-services" class="btn btn-link btn-warning btn-magnify">
+                    Coach Recruting Profile
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-xl-2">
+                <div class="description">
+                    <a href="#/digital-transformation/business-transformation-services" class="btn btn-link btn-warning btn-magnify">
+                        Sports Technology Services
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-xl-2">
+                <div class="item-content ">
+                    <div class="item-text">
+                        <a href="#/digital-transformation/digital-talent-services" class="btn btn-link btn-warning btn-magnify">
+                            Digital Talent Fulfillment Services
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 align-center">
+            </div>
+
+        </div>
+    </div>
+</section>

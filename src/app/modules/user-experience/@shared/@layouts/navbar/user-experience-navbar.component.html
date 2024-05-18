@@ -1,0 +1,101 @@
+<!-- 
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-absolute">
+  <nav id="navbar" class="navbar navbar-default fixed-top nav-bg nav-down navbar-expand-lg" color-on-scroll="500">
+-->
+
+<nav id="navbar" class="navbar navbar-default fixed-top nav-bg nav-down navbar-expand-lg" color-on-scroll="500">
+  <div class="container-fluid">
+    <div class="navbar-wrapper">
+      <div class="navbar-logo">
+        <a [routerLink]="['index']" title='Showcase' style="text-decoration: none;">
+          <img src="assets/img/logos/internal/logo-dark.png" />
+        </a>
+      </div>
+    </div>
+    <button class="navbar-toggler" type="button" (click)="collapse()"
+      [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+      <span class="navbar-toggler-bar navbar-kebab"></span>
+      <span class="navbar-toggler-bar navbar-kebab"></span>
+      <span class="navbar-toggler-bar navbar-kebab"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="collapseExample" [ngbCollapse]="!isCollapsed">
+      <ul class="navbar-nav">
+        <li class="nav-item" [routerLinkActive]='["link-active"]'>
+          <a class="nav-link" [routerLink]="['index']">
+            <i class="nc-icon nc-bank icon-success"></i> Home
+          </a>
+        </li>
+        <li class="nav-item" [routerLinkActive]='["link-active"]'>
+          <a class="nav-link" [routerLink]="['sports-technology-agency']">
+            <i class="nc-icon nc-bulb-63 icon-info"></i> Who We Are
+          </a>
+        </li>
+        <li class="nav-item" [routerLinkActive]='["link-active"]'>
+          <a class="nav-link" [routerLink]="['sports-technology-services']">
+            <i class="nc-icon nc-air-baloon icon-success"></i> Services
+          </a>
+        </li>
+        <li class="nav-item" [routerLinkActive]='["link-active"]'>
+          <a class="nav-link" [routerLink]="['athletes']">
+            <i class="nc-icon nc-trophy icon-warning"></i> For Athletes
+          </a>
+        </li>
+        <li class="nav-item" [routerLinkActive]='["link-active"]'>
+          <a class="nav-link" [routerLink]="['coaches']">
+            <i class="nc-icon nc-chart-bar-32 icon-primary"></i> For Coaches
+          </a>
+        </li>
+        <li class="nav-item" [routerLinkActive]='["link-active"]'>
+          <a class="nav-link" [routerLink]="['/identity/account/susi']">
+            <i class="nc-icon nc-single-02 icon-warning"></i> Members Only Access
+          </a>
+        </li>
+        <!---->
+        <li class="nav-item" [routerLinkActive]='["link-active"]' *ngIf="loginDisplay">
+          <a class="nav-link" href="/user-workspace/dashboard">
+            <i class="nc-icon nc-app icon-success"></i> My Dashboard
+          </a>
+        </li>
+        <li class="nav-item" [routerLinkActive]='["link-active"]' *ngIf="loginDisplay">
+          <a class="nav-link" href="/user-workspace/account">
+            <i class="nc-icon nc-app icon-success"></i> My user workspace
+          </a>
+        </li>
+        <li class="nav-item" [routerLinkActive]='["link-active"]'>
+          <!--
+          <a class="nav-link" [routerLink]="['/identity/account/susi']">
+            <button mat-raised-button *ngIf="loginDisplay" (click)="signOut()">Log out</button>
+          </a>
+          FontAwesome-Xmark-icon
+          -->
+          <a class="nav-link " [routerLink]="['contact']">
+            <img src="assets/img/icons/icon-logout.png" class="icon-link" *ngIf="loginDisplay" (click)="signOut()" />
+          </a>
+        </li>
+        <!---->
+        <li class="nav-item" [routerLinkActive]='["link-active"]' style="padding: 0px; margin: 0px;">
+          <a class="nav-link " [routerLink]="['contact']">
+              <img src="assets/img/icons/icon-link-contact.png" class="icon-link" />
+          </a>
+      </li>
+      <li class="nav-item" [routerLinkActive]='["link-active"]' style="padding: 0px; margin: 0px;">
+          <a class="nav-link " [routerLink]="['consultation']">
+              <img src="assets/img/icons/icon-link-event.png" class="icon-link" />
+          </a>
+      </li>
+
+      <li class="nav-item" [routerLinkActive]='["link-active"]' style="padding: 0px; margin: 0px;">
+        <a class="nav-link " [routerLink]="['consultation']">
+            <img src="assets/img/icons/icon-link-event.png" class="icon-link" />
+        </a>
+      </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--
+<script>
+  window.onscroll = function() {scrollFunction()};
+</script>
+-->

@@ -1,0 +1,43 @@
+@import "../user-interface.component.scss";
+
+$left-form-color: #0a2144 !default;
+$separator-color: $primary-color !default;
+
+.contact-form-left {
+    background-color: $left-form-color;
+    color: $white-color;
+    padding: 0px 50px 50px 50px;
+
+    h2 {
+        color: $main-states-color;
+        padding: 0px 0px 15px 0px;
+    }
+
+    h5, h3, h4 {
+        color: #FFF
+    }
+
+}
+
+.contact-form-right {
+    color: $dark-color;
+    background-color: $neutral-states-color;
+    padding: 20px 50px 50px 50px;
+
+
+    h1 {
+        color: $dark-color;
+        padding: 0px 0px 15px 0px;
+    }
+
+    h2 {
+        color: $main-states-color;
+        padding: 0px 0px 15px 0px;
+    }
+
+    h5, h3, h4 {
+        color: $dark-color;
+    }
+
+}
+
